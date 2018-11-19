@@ -1,0 +1,130 @@
+body {
+	font-size: 30px;
+	font-family: 'Doppio One', sans-serif;
+	font-weight: bold;
+	background-image: url("tlo.jpg");
+	background-size: cover;
+	color: darkblue;
+	
+}
+
+.container{
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.ladowanie {
+	position: relative;
+    text-align: center;
+    width: 100vw;
+    top: 10%;	
+	animation-name: pierwsza;
+	animation-duration: 3s;
+	animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+
+.dane {
+	position: relative;
+	text-align: center;
+    top: -10%;
+    width: 100vw;
+	text-transform: uppercase;
+	animation-name: animacja;
+	animation-duration: 6s;
+	animation-iteration-count: 1;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
+
+.linki {
+    position: relative;
+    justify-content: center;
+    top: -30%;
+    width: 100vw;
+    display: flex;
+    
+}
+
+.git{
+    margin: 0 15px;
+	transition: all 2s ease-in-out;
+	animation-name: animacja;
+	animation-duration: 6s;
+	animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+.git:hover{
+	transform: scale(1.2);
+}
+
+.link {
+    margin: 0 15px;
+    transition: all 2s ease-in-out;
+    animation-name: animacja;
+    animation-duration: 6s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+.link:hover {
+    transform: scale(1.2);
+}
+
+.insta {
+    margin: 0 15px;
+    transition: all 2s ease-in-out;
+    animation-name: animacja;
+    animation-duration: 6s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+.insta:hover {
+    transform: scale(1.2);
+}
+
+.fb {
+    margin: 0 15px;
+    transition: all 2s ease-in-out;
+    animation-name: animacja;
+    animation-duration: 6s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+.fb:hover {
+    transform: scale(1.2);
+}
+
+@keyframes pierwsza {
+	0% {opacity: 1}
+	20% {opacity: 0}
+	40% {opacity: 1}
+	60% {opacity: 0}
+	80% {opacity: 1}
+	100% {opacity: 0}
+}
+
+
+@keyframes animacja {
+    0% { opacity: 0}
+    20% {opacity: 0}
+    40% {opacity: .25}
+    60% {opacity: .5}
+	80% {opacity: .75}
+	100% {opacity: 1}
+}
